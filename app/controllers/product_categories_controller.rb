@@ -15,6 +15,7 @@ class ProductCategoriesController < ApplicationController
       end
 
       def index
+        #render plain: params.inspect
         @product=Product.find(params[:id])
       end
 

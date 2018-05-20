@@ -1,14 +1,15 @@
-<%= link_to 'New Product', new_product_path,class: 'btn btn-primary'%>
-<div class="product-body">
-<h1>Product</h1>
-<% @products.each do |p|%>
-    <div class="well">
-    <p><%= p.product_name %>
-    <%= link_to 'Edit',edit_product_path(p), class: 'btn btn-primary' %>
-    <%= link_to 'View',list_categories_path(p), class: 'btn btn-primary' %>
-    <%= link_to 'Delete',delete_product_path(p),method: :delete, data: {confirm: 'Are You Sure?'}, class: 'btn btn-danger' %>
-    </p>
-    </div>
- <% end %>
- </div>
-
+<div class="row">
+        <%= link_to 'New Product', new_product_path,class: 'btn btn-primary'%>
+        <div class="product-body">
+        <h1>Product</h1>
+        <% @products.each do |p|%>
+            <div class="well">
+            <p><%= p.product_name %>
+            <%= link_to 'Edit',edit_product_path(p), class: 'btn btn-primary' %>
+            <%= link_to 'View',list_categories_path(p), class: 'btn btn-primary' %>
+            <%= link_to 'Delete',delete_product_path(p),method: :delete, data: {confirm: 'Are You Sure?'}, class: 'btn btn-danger' %>
+            </p>
+            </div>
+        <% end %>
+        </div>
+  </div>      

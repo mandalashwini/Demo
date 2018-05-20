@@ -21,4 +21,7 @@ Rails.application.routes.draw do
   get 'product_category/:id/edit', to: 'product_categories#edit', as: 'edit_product_category'
   put '/product_category/:id', to: 'product_categories#update',as: 'product_category'
   delete '/product_category/:id', to: 'product_categories#destroy', as: 'delete_product_category'
+
+
+
 end
